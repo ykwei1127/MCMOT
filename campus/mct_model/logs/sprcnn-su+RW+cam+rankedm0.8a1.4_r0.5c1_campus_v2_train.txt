@@ -1,0 +1,6 @@
+Epoch 1, Avg_Cam=1.4892, Avg_Cross=0.6799, Avg_RankedLoss=0.2958, Map=53.66%
+Easy_Valid_Map=98.83%, Easy_Valid_Loss=0.7808, Hard_Valid_Map=76.22%, Hard_Valid_Loss=0.7064
+Epoch 2, Avg_Cam=1.0315, Avg_Cross=0.5703, Avg_RankedLoss=0.2787, Map=87.61%
+Easy_Valid_Map=99.88%, Easy_Valid_Loss=0.5942, Hard_Valid_Map=77.80%, Hard_Valid_Loss=0.5988
+Epoch 3, Avg_Cam=1.0876, Avg_Cross=0.5780, Avg_RankedLoss=0.2437, Map=91.79%
+Easy_Valid_Map=99.77%, Easy_Valid_Loss=0.6130, Hard_Valid_Map=77.08%, Hard_Valid_Loss=0.6118

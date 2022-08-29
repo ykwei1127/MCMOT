@@ -1,0 +1,18 @@
+PATH:
+  TRAIN_PATH: "/home/ykwei/MCMT-SU/nlprmct/dataset/train"
+  VALID_PATH: "/home/ykwei/MCMT-SU/nlprmct/dataset/validation"
+  OUTPUT_PATH: "/home/ykwei/MCMT-SU/nlprmct/mct_model/checkpoints"
+
+DEVICE:
+  TYPE: "cuda"
+  GPU: 0
+
+MCT:
+  FEATURE_DIM: 512
+  LEARNING_RATE: 0.001   # 0.001
+  WEIGHT_DECAY: 0.3   # 0.3
+  EPOCHS: 10
+  BATCH_SIZE: 8  # 128 64
+  RW: True
+  WEIGHT: "/home/ykwei/MCMT-SU/nlprmct/mct_model/checkpoints/None_3.pth"
+  

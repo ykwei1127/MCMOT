@@ -1,0 +1,1 @@
+python ../eval/eval.py ../eval/ground_truth_validation_S05.txt ../eval/track1.txt --mct --dstype validation

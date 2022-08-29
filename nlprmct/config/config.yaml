@@ -1,0 +1,36 @@
+PATH:
+  ROOT_PATH: "/home/ykwei/MCMT-SU/nlprmct/dataset"
+
+  INPUT_PATH: "/home/ykwei/MCMT-SU/nlprmct/dataset/test"
+  # SCT_PATH: "/home/ykwei/MCMT-SU/mot-sprcnn-su/outs/nlprmct_test_p300ch17_0407"
+  SCT_PATH: "/home/ykwei/MCMT-SU/mot-sprcnn-su/outs/nlprmct_test_v20e3_0407_shside800"
+
+
+WITH_SU: True
+EXPSU: 5
+
+DEVICE:
+  TYPE: "cuda"
+  GPUS: [1]
+
+REID:
+  WEIGHTS: "/home/ykwei/MCMT-SU/mot-sprcnn-su/weights/osnet_x1_0_MS_D_C.pth"
+  NUM_CLASSES: 1
+  IMG_SIZE: [128, 256]
+  EMB_SIZE: 512
+  BATCH_SIZE: 32 #32
+
+MCT:
+  FEATURE_DIM: 512
+  WEIGHT: "/home/ykwei/MCMT-SU/nlprmct/mct_model/checkpoints/sprcnn-su+RW+cam+rankedm0.8a1.4_r0.5c1_nlprmct_5.pth"
+  METHOD: "top1"
+  # METHOD: "CIR"
+  METRIC: "cosine"
+  # METRIC: "model"
+  SIM_TH: 0.8
+  CIR_TH: 0.6
+  # RW: True
+  RW: False
+
+DETECTION: "sprcnn"
+SCT: "su"

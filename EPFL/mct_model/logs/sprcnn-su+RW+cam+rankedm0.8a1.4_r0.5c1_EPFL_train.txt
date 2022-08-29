@@ -1,0 +1,18 @@
+Epoch 1, Avg_Cam=1.5394, Avg_Cross=0.4837, Avg_RankedLoss=0.3376, Map=90.02%
+Easy_Valid_Map=93.91%, Easy_Valid_Loss=0.6684, Hard_Valid_Map=82.89%, Hard_Valid_Loss=0.6339
+Epoch 2, Avg_Cam=0.7743, Avg_Cross=0.3598, Avg_RankedLoss=0.3193, Map=96.53%
+Easy_Valid_Map=95.38%, Easy_Valid_Loss=0.5471, Hard_Valid_Map=83.52%, Hard_Valid_Loss=0.5682
+Epoch 3, Avg_Cam=0.6684, Avg_Cross=0.2888, Avg_RankedLoss=0.3122, Map=98.65%
+Easy_Valid_Map=95.82%, Easy_Valid_Loss=0.5113, Hard_Valid_Map=87.69%, Hard_Valid_Loss=0.5190
+Epoch 4, Avg_Cam=0.6544, Avg_Cross=0.3056, Avg_RankedLoss=0.3079, Map=99.17%
+Easy_Valid_Map=97.45%, Easy_Valid_Loss=0.5055, Hard_Valid_Map=89.28%, Hard_Valid_Loss=0.5159
+Epoch 5, Avg_Cam=0.6634, Avg_Cross=0.3456, Avg_RankedLoss=0.3045, Map=99.19%
+Easy_Valid_Map=97.03%, Easy_Valid_Loss=0.4935, Hard_Valid_Map=89.88%, Hard_Valid_Loss=0.5207
+Epoch 6, Avg_Cam=0.6725, Avg_Cross=0.3733, Avg_RankedLoss=0.3017, Map=99.12%
+Easy_Valid_Map=97.03%, Easy_Valid_Loss=0.4867, Hard_Valid_Map=89.55%, Hard_Valid_Loss=0.5263
+Epoch 7, Avg_Cam=0.6792, Avg_Cross=0.3907, Avg_RankedLoss=0.2999, Map=99.06%
+Easy_Valid_Map=97.41%, Easy_Valid_Loss=0.4876, Hard_Valid_Map=89.65%, Hard_Valid_Loss=0.5332
+Epoch 8, Avg_Cam=0.6860, Avg_Cross=0.4079, Avg_RankedLoss=0.2981, Map=98.91%
+Easy_Valid_Map=97.15%, Easy_Valid_Loss=0.4912, Hard_Valid_Map=89.49%, Hard_Valid_Loss=0.5408
+Epoch 9, Avg_Cam=0.6922, Avg_Cross=0.4243, Avg_RankedLoss=0.2962, Map=98.70%
+Easy_Valid_Map=97.15%, Easy_Valid_Loss=0.4969, Hard_Valid_Map=89.44%, Hard_Valid_Loss=0.5479

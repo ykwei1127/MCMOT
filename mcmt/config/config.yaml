@@ -1,0 +1,59 @@
+PATH:
+  ROOT_PATH: "/home/ykwei/MCMT-SU/mcmt/dataset"
+
+  INPUT_PATH: "/home/ykwei/MCMT-SU/mcmt/dataset/validation"
+  SCT_PATH: "/home/ykwei/MCMT-SU/mot-sprcnn-su/outs/aic21_validation_v8e39_flip"
+
+  # SCT_PATH: "/home/ykwei/MCMT-SU/mot-sprcnn-su/outs/aic21_validation_v8e39_change_reid_size"
+
+  # INPUT_PATH: "/home/ykwei/MCMT-SU/mcmt/dataset/test"
+  # SCT_PATH: "/home/ykwei/MCMT-SU/mot-sprcnn-su/outs/aic21_test_v8e39_flip"
+
+  # SCT_PATH: "/home/ykwei/MCMT-SU/mot-sprcnn-su/outs/yolov5"
+
+WITH_SU: True
+FLIP_FEATURE: True
+
+EXPSU: 5
+
+DEVICE:
+  TYPE: "cuda"
+  GPUS: [1]
+
+REID:
+  WEIGHTS: "/home/ykwei/MCMT-SU/mcmt/reid_model/checkpoints/resnet101_ibn_a_2.pth"
+#  WEIGHTS: "/home/ykwei/MCMT-SU/mcmt/reid_model/checkpoints/model-0.305-best_mAP.pth"
+#  WEIGHTS: "/home/ykwei/MCMT-SU/mot-sprcnn-su/weights/osnet_x1_0_MS_D_C.pth"
+#  NUM_CLASSES: 667
+  NUM_CLASSES: 100
+#  NUM_CLASSES: 1
+  # IMG_SIZE: [256, 256]
+  IMG_SIZE: [384, 384]
+#  IMG_SIZE: [128, 256]
+  EMB_SIZE: 2048
+#  EMB_SIZE: 512
+  BATCH_SIZE: 32 #32
+
+MCT:
+  FEATURE_DIM: 2048
+#  FEATURE_DIM: 512
+  WEIGHT: "/home/ykwei/MCMT-SU/mcmt/mct_model/checkpoints/baseline+RW+cam+rankedm0.8a1.4_r0.5c1_flip_v2_10.pth"
+  # WEIGHT: "/home/ykwei/MCMT-SU/mcmt/mct_model/checkpoints/baseline+RW+cam+rankedm0.8a1.4_r0.5c1_flip_5.pth"
+  # WEIGHT: "/home/ykwei/MCMT-SU/mcmt/mct_model/checkpoints/baseline+RW+cam+rankedm0.8a1.4_r0.5c1_10.pth"
+  METHOD: "top1"
+  # METHOD: "CIR"
+  METRIC: "cosine"
+  # METRIC: "model"
+  # SIM_TH: 0.8
+  # CIR_TH: 0.8
+  SIM_TH: 0.8
+  CIR_TH: 0.8
+  # RW: True
+  RW: False
+
+# DETECTION: "mask_rcnn"
+# SCT: "tnt"
+DETECTION: "sprcnn"
+SCT: "su"
+# DETECTION: "yolov5"
+# SCT: "sm"

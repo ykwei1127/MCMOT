@@ -1,0 +1,41 @@
+PATH:
+  ROOT_PATH: "/home/ykwei/MCMT-SU/EPFL/dataset"
+  # ROOT_PATH: "/home/ykwei/MCMT-SU/EPFL/dataset2"
+
+  INPUT_PATH: "/home/ykwei/MCMT-SU/EPFL/dataset/test"
+  SCT_PATH: "/home/ykwei/MCMT-SU/mot-sprcnn-su/outs/EPFL_test_p300ch17_0407_shside1080"
+  # INPUT_PATH: "/home/ykwei/MCMT-SU/EPFL/dataset2/test"
+  # SCT_PATH: "/home/ykwei/MCMT-SU/mot-sprcnn-su/outs/EPFL_test_p300ch17_0407_shside1080_trans"
+  # INPUT_PATH: "/home/ykwei/MCMT-SU/EPFL/dataset2/test"
+  # SCT_PATH: "/home/ykwei/MCMT-SU/mot-sprcnn-su/outs/EPFL_test_p300ch17_0407_shside1080_dataset2"
+  # INPUT_PATH: "/home/ykwei/MCMT-SU/EPFL/dataset2/test"
+  # SCT_PATH: "/home/ykwei/MCMT-SU/mot-sprcnn-su/outs/EPFL_test_v22e23_0407_shside1080"
+
+
+WITH_SU: True
+EXPSU: 5
+
+DEVICE:
+  TYPE: "cuda"
+  GPUS: [1]
+
+REID:
+  WEIGHTS: "/home/ykwei/MCMT-SU/mot-sprcnn-su/weights/osnet_x1_0_MS_D_C.pth"
+  NUM_CLASSES: 1
+  IMG_SIZE: [128, 256]
+  EMB_SIZE: 512
+  BATCH_SIZE: 32 #32
+
+MCT:
+  FEATURE_DIM: 512
+  WEIGHT: "/home/ykwei/MCMT-SU/EPFL/mct_model/checkpoints/sprcnn-su+RW+cam+rankedm0.8a1.4_r0.5c1_EPFL_5.pth"
+  METHOD: "top1"
+  # METHOD: "CIR"
+  METRIC: "cosine"
+  # METRIC: "model"
+  SIM_TH: 0.6
+  CIR_TH: 0.6
+  RW: False
+
+DETECTION: "sprcnn"
+SCT: "su"

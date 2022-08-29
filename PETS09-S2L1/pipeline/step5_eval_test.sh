@@ -1,0 +1,1 @@
+python ../eval/eval_exp.py ../eval/ground_truth_PETS09-S2L1.txt ../eval/track.txt --dstype validation
