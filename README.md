@@ -43,7 +43,7 @@ python normalize_cameraid.py
 ```
 
 ## Petrained Weights
-* It should be available at here.
+* It should be available at [here](https://github.com/ykwei1127/MCMOT/releases/tag/Weights).
 
 * To train the object detector:
     1. ```p300_coco.ckp```: 300 proposal bounding boxes, trained on COCO
