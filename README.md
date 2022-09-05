@@ -1,6 +1,9 @@
 # MCMOT with Spatial Uncertainty
 Deep Tracklet Feature Representation via Spatial Uncertainty for Multi-Camera Multi-Object Tracking System
 
+![architecture](https://github.com/ykwei1127/MCMOT/blob/master/figures/architecture.png)
+![module](https://github.com/ykwei1127/MCMOT/blob/master/figures/module.png)
+
 # Get Started
 ## Installation (Linux)
 * python==3.8
